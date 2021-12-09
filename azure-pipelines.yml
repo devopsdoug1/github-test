@@ -16,6 +16,7 @@ steps:
 - script: |
     echo "test = $TEST"
     echo "secure = $SECURE"
+    echo "testing"
   displayName: 'Run a multi-line script'
   env:
     TEST: $(TEST)
