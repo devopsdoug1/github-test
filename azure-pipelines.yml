@@ -14,6 +14,9 @@ steps:
   displayName: 'Run a one-line script'
 
 - script: |
-    echo Add other tasks to build, test, and deploy your project.
-    echo See https://aka.ms/yaml
+    echo "test = $TEST"
+    echo "secure = $SECURE"
   displayName: 'Run a multi-line script'
+   env:
+    TEST: $(TEST)
+    SECURE: $(SECURE)
